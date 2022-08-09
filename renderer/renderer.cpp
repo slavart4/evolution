@@ -4,7 +4,6 @@ using namespace sf;
 // Constructor / Destructor
 
 Renderer::Renderer() {
-    sf::Clock clock;
     this->initVariables();
     this->initWindow();
     this->handleEvents();

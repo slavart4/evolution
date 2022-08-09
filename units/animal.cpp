@@ -1,11 +1,9 @@
 #include "animal.h"
 
 Animal::Animal() {
-    std::cout << "New animal" << std::endl;
 }
 
 Animal::~Animal() {
-    std::cout << "Delete animal" << std::endl;
 }
 
 void Animal::move() {
@@ -63,7 +61,5 @@ void Animal::bite(Unit *unit) {
     if (checkCollision(this->unitShape, unit->unitShape)) {
         this->hunger -= this->strength;
         unit->hp -= this->strength;
-        std::cout << '\n' << this->type << " eats " << unit->type << std::endl;
-        std::cout << this->hunger << '\n' << std::endl;
     }
 }

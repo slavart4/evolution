@@ -3,8 +3,6 @@
 std::vector <Peaceful*> peacefuls;
 
 Peaceful::Peaceful() {
-    std::cout << "New peaceful unit" << std::endl;
-
     this->fullHp =      Settings::peacefulHp + normalDistribution(Settings::peacefulHp);
     this->hp =          Settings::peacefulHp + normalDistribution(Settings::peacefulHp);
     this->size =        Settings::peacefulSize + normalDistribution(Settings::peacefulSize);
@@ -21,7 +19,6 @@ Peaceful::Peaceful() {
 }
 
 Peaceful::~Peaceful() {
- std::cout << "Delete peaceful" << std::endl;
 }
 
 void Peaceful::action() {
@@ -35,7 +32,6 @@ void Peaceful::action() {
 //Private functions
 void Peaceful::replicate() {
     if((this->fullHp == this->hp) && (this->hunger <= 0)) {
-        std::cout << "\npeaceful replicates\n" << std::endl;
         auto newPeaceful = new Peaceful();
         newPeaceful->coordinateX = this->coordinateX + 40;
         newPeaceful->coordinateY = this->coordinateY + 40;

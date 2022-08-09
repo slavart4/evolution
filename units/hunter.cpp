@@ -3,9 +3,6 @@
 std::vector <Hunter*> hunters;
 
 Hunter::Hunter() {
-    ///TODO: add mutation
-    std::cout << "New hunter unit!" << std::endl;
-
     this->hp =          Settings::hunterHp + normalDistribution(Settings::hunterHp);
     this->fullHp =      Settings::hunterHp + normalDistribution(Settings::hunterHp);
     this->size =        Settings::hunterSize + normalDistribution(Settings::hunterSize);
@@ -22,7 +19,6 @@ Hunter::Hunter() {
 }
 
 Hunter::~Hunter() {
-    std::cout << "Delete hunter." << std::endl;
 }
 
 void Hunter::action() {
@@ -35,7 +31,6 @@ void Hunter::action() {
 
 void Hunter::replicate() {
     if((this->fullHp == this->hp) && (this->hunger <= 0)) {
-        std::cout << "\npeaceful replicates\n" << std::endl;
         auto newHunter = new Hunter();
         newHunter->coordinateX = this->coordinateX + 10;
         newHunter->coordinateY = this->coordinateY + 10;
