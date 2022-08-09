@@ -1,0 +1,35 @@
+{
+  "unit": {
+    "animal": {
+      "hunter": {
+        "hp": 12,
+        "size": 8,
+        "speed": 8,
+        "maxHunger": 500,
+        "maxAge": 1000,
+        "strength": 8,
+        "view": 150,
+        "growthSpeed": 4,
+        "color": "red"
+      },
+      "peaceful": {
+        "hp": 10,
+        "size": 10,
+        "speed": 3,
+        "maxHunger": 500,
+        "maxAge": 1000,
+        "strength": 4,
+        "view": 100,
+        "growthSpeed": 4,
+        "color": "blue"
+      }
+    },
+    "plant": {
+      "hp": 500,
+      "size": 15,
+      "maxAge": 6000,
+      "growthSpeed": 1,
+      "color": "green"
+    }
+  }
+}
