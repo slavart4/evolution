@@ -2,33 +2,33 @@
   "unit": {
     "animal": {
       "hunter": {
-        "hp": 12,
-        "size": 8,
-        "speed": 8,
-        "maxHunger": 500,
-        "maxAge": 1000,
-        "strength": 8,
-        "view": 150,
-        "growthSpeed": 4,
+        "hp": 12.0,
+        "size": 8.0,
+        "speed": 8.0,
+        "maxHunger": 500.0,
+        "maxAge": 1000.0,
+        "strength": 8.0,
+        "view": 150.0,
+        "growthSpeed": 4.0,
         "color": "red"
       },
       "peaceful": {
-        "hp": 10,
-        "size": 10,
-        "speed": 3,
-        "maxHunger": 500,
-        "maxAge": 1000,
-        "strength": 4,
-        "view": 100,
-        "growthSpeed": 4,
+        "hp": 10.0,
+        "size": 10.0,
+        "speed": 3.0,
+        "maxHunger": 500.0,
+        "maxAge": 1000.0,
+        "strength": 4.0,
+        "view": 100.0,
+        "growthSpeed": 4.0,
         "color": "blue"
       }
     },
     "plant": {
-      "hp": 500,
-      "size": 15,
-      "maxAge": 6000,
-      "growthSpeed": 1,
+      "hp": 500.0,
+      "size": 15.0,
+      "maxAge": 6000.0,
+      "growthSpeed": 1.0,
       "color": "green"
     }
   }

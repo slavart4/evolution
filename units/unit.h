@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include <SFML/Graphics.hpp>
+#include <map>
 
 #include "random"
 #include "../settings/settings.h"
@@ -36,5 +37,3 @@ public:
 
     virtual void action();
 };
-
-extern
